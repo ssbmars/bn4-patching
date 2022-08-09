@@ -42,11 +42,21 @@ script 5 mmbn4 {
 }
 ```
 
+## editing it
+
+The important text archive where your text changes go is located in the root of this repo.  
+`bm_text.tpl` is for BN4 Blue Moon. This is a textpet file, thank you Prof.9  
+
+To modify assembly, or do any sort of procedural hex editing, look inside the `/asm/` folder for assembly files such as `bn4.asm`. Put your modifications in that file.  
+The `_addr` files such as `bn4bm_addr.asm` are to define addresses in the ROM that are different between the two versions of the game, allowing you to modify addresses defined by a variable that gets set depending on which rom is being edited. If you are only modifying one version, you can ignore this file and nothing bad will happen.  
+
 ## shipping it
 
-run `compile.bat` to apply the changes. ROMs get generated in the `/out/` folder, where you will also see `release.py`. This python file is nifty and will generate patch metadata for Tango. Open `release.py` in a text editor and follow the instructions in the comments to set up your patch metadata for release.  
+run `compile.bat` to apply the changes. ROMs get generated in the `/out/` folder along with a BPS patch that can apply over a vanilla ROM.  
+In the same folder you will also see `release.py`. This python file is nifty and will generate patch metadata for Tango. Open `release.py` in a text editor and follow the instructions in the comments to set up your patch metadata for release.  
 Running the python script requires the python runtime (very easy to install).  
-<https://www.python.org/downloads/>
+<https://www.python.org/downloads/>  
+You could ignore the python script and put the metadata together yourself, but like, c'mon.  
 
 ## Sources
 TextPet <https://github.com/Prof9/TextPet> (MIT License)  
