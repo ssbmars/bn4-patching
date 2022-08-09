@@ -25,3 +25,4 @@ When copying a text archive, not all scripts need to be included. Any script tha
 ## Sources
 TextPet <https://github.com/Prof9/TextPet> (MIT License)  
 armips <https://github.com/Kingcom/armips> (MIT License)  
+Flips <https://github.com/Daedalus007/Flips-daedalus> (GPL3 License)  
