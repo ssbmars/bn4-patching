@@ -55,7 +55,7 @@ Assembly edits are carried out by armips, which has some fantastic documentation
 ## shipping it
 
 run `compile.bat` to apply the changes. ROMs get generated in the `/out/` folder along with a BPS patch that can apply over a vanilla ROM.  
-In the same folder you will also see `release.py`. This python file is nifty and will generate patch metadata for Tango. Open `release.py` in a text editor and follow the instructions in the comments to set up your patch metadata for release.  
+In the same folder you will also see `release.py`. This python script is nifty and will construct the patch folder and generate the required metadata for Tango. Open `release.py` in a text editor and follow the instructions in the comments to set up your patch metadata for release.  
 Running the python script requires the python runtime (very easy to install).  
 <https://www.python.org/downloads/>  
 You could ignore the python script and put the metadata together yourself, but like, c'mon.  
