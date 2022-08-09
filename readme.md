@@ -7,6 +7,7 @@ To modify an additional rom, new parameters for it must be included in `compile.
 
 ## finding the text archives to edit
 There are full text archive dumps of BlueMoon and RedSun in `/textdumps/`. Search through it for what you want and copy the text to `bm_text.tpl` before editing. Some common text archives have already been copied over.  
+Before you can edit a script, you must ensure you've included the @archive and @size values for it. The order of definition is archive, size, script(s) where scripts always go under their respective archive.  
 An intact text archive looks like this:  
 ``` 
 @archive 00A455
@@ -20,8 +21,9 @@ script 1 mmbn4s {
 	"Binted"
 	end
 }
+etc...
 ```
-When copying a text archive, not all scripts need to be included. Any script that gets excluded will simply remain unmodified. Scripts can also look like this. Note the difference in the name directly following the script number (mmbn4 vs mmbn4s):  
+When copying a text archive, not all scripts need to be included. Any script that gets excluded will simply remain unmodified. Scripts can also look like this:  
 ```
 @archive 74C670
 @size 256
@@ -41,6 +43,7 @@ script 5 mmbn4 {
 	msgCloseQuick
 }
 ```
+Note the difference in the name directly following the script number (mmbn4 vs mmbn4s). The script type ending in 's' is usually simpler and supports fewer commands. Details about this sort of stuff can be found in the `/plugins/` folder where you can find files such as `mmbn4s.ini` which describe all the commands that are available in that type of script.  
 
 ## editing it
 
