@@ -12,7 +12,7 @@
 
 
 games = ["bn4",]	# must be manually defined, values are comma separated
-patchname = "sus"		# must be manually defined, game name is prepended to it
+patchname = ""		# must be manually defined, game name is prepended to it
 AlwaysPromptForCompatibilityString = True	# set to false if patch updates don't break compatibility
 netplay_compatibility = "" # game name is prepended to it, this will be overwritten at runtime if the above boolean is True
 patchnames = {
