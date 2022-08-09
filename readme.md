@@ -2,7 +2,7 @@
 File names matter.  
 bn4bm.gba  
 bn4rs.gba  
-To modify an additional rom, new parameters for it must be included in `compile.bat` and `compile.tpl`. If you are making assembly 
+To modify an additional rom, new parameters for it must be included in `compile.bat` and `compile.tpl`. If you are making changes with assembly files then the new rom will need to have proper addresses defined for it (asm/xyz_addr.asm).
 
 ## finding the text archives to edit
 There are full text archive dumps of BlueMoon and RedSun in `/textdumps/`. Search through it for what you want and copy the text to `bm_text.tpl` before editing. Some common text archives have already been copied over.  
