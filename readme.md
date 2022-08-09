@@ -48,7 +48,9 @@ The important text archive where your text changes go is located in the root of 
 `bm_text.tpl` is for BN4 Blue Moon. This is a textpet file, thank you Prof.9  
 
 To modify assembly, or do any sort of procedural hex editing, look inside the `/asm/` folder for assembly files such as `bn4.asm`. Put your modifications in that file.  
-The `_addr` files such as `bn4bm_addr.asm` are to define addresses in the ROM that are different between the two versions of the game, allowing you to modify addresses defined by a variable that gets set depending on which rom is being edited. If you are only modifying one version, you can ignore this file and nothing bad will happen.  
+The `_addr` files such as `bn4bm_addr.asm` and `bn4rs_addr.asm` are to define addresses in the ROM that are different between the two versions of the game, allowing you to modify addresses defined by a variable that gets set depending on which rom is being edited. If you are only modifying one version, you can ignore this file and nothing bad will happen.  
+Assembly edits are carried out by armips, which has some fantastic documentation.  
+<https://github.com/Kingcom/armips>
 
 ## shipping it
 
