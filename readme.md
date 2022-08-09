@@ -42,6 +42,12 @@ script 5 mmbn4 {
 }
 ```
 
+## shipping it
+
+run `compile.bat` to apply the changes. ROMs get generated in the `/out/` folder, where you will also see `release.py`. This python file is nifty and will generate patch metadata for Tango. Open `release.py` in a text editor and follow the instructions in the comments to set up your patch metadata for release.  
+Running the python script requires the python runtime (very easy to install).  
+<https://www.python.org/downloads/>
+
 ## Sources
 TextPet <https://github.com/Prof9/TextPet> (MIT License)  
 armips <https://github.com/Kingcom/armips> (MIT License)  
